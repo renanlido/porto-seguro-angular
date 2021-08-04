@@ -1,0 +1,13 @@
+.default__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  width: 100%;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.default__content {
+  max-width: 1162px;
+  width: 100%;
+}

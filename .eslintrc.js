@@ -45,6 +45,8 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       rules: {
+        'space-before-function-paren': 'off',
+        'import/prefer-default-export': 'off',
         '@angular-eslint/directive-selector': [
           'error',
           {

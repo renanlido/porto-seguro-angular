@@ -1,0 +1,42 @@
+// WIDE NAV
+
+.wide_nav {
+  display: none;
+  flex-direction: row;
+  font-size: 1.25rem;
+  color: var(--yellow300);
+
+  li {
+    a {
+      &.active {
+        color: var(--yellow900);
+      }
+    }
+
+    & + li {
+      margin-left: 24px;
+    }
+
+    &:hover {
+      color: var(--yellow900);
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .wide_nav {
+    display: flex;
+  }
+}
+
+@media (max-width: 922px) {
+  .wide_nav {
+    font-size: 1.1rem;
+
+    li {
+      & + li {
+        margin-left: 20px;
+      }
+    }
+  }
+}
