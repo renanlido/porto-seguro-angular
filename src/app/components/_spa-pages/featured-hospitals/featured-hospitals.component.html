@@ -8,17 +8,11 @@
   </app-h2>
 
   <div class="container__cards">
-    <!-- {featuredHospitals.map(featuredHospital => (
-          <Card
-            key={featuredHospital.id}
-            cardData={{
-              title: featuredHospital.title,
-              imageName: featuredHospital.imageName,
-              details: featuredHospital.details
-            }}
-            isButtonVisible
-          />
-        ))} -->
+    <app-card
+      *ngFor="let card of cardData"
+      [card]="card"
+      [isButtonVisible]="isButtonVisible"
+    ></app-card>
   </div>
   <div class="card--isActive"></div>
 </app-default-container>

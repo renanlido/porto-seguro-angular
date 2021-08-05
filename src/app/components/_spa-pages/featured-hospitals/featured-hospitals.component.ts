@@ -1,25 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CardTypeProps } from 'src/_model/CardTypeProps';
 import { v4 as uuid } from 'uuid';
-
-type CardData = {
-  id: string;
-  imageName: string;
-  title: string;
-  details?: {
-    text: string;
-    adress: {
-      street: string;
-      neighborhood: string;
-      state: string;
-      uf: string;
-      cep: string;
-    };
-    phone?: {
-      ddd: string;
-      number: string;
-    };
-  };
-};
 
 @Component({
   selector: 'app-featured-hospitals',
@@ -27,14 +8,11 @@ type CardData = {
   styleUrls: ['./featured-hospitals.component.scss']
 })
 export class FeaturedHospitalsComponent implements OnInit {
-  private data: CardData[] = [];
-
-  // constructor(private data: CardData[]) {
-  //   data = [];
-  // }
+  public cardData: CardTypeProps[] = [];
+  public isButtonVisible = true;
 
   ngOnInit(): void {
-    this.data = [
+    this.cardData = [
       {
         id: uuid(),
         imageName: 'vitoriaBarra',

@@ -8,6 +8,7 @@ import { H1Component } from '../foundation/typography/h1/h1.component';
 import { DefaultContainerComponent } from '../foundation/layout/default-container/default-container.component';
 import { H2Component } from '../foundation/typography/h2/h2.component';
 import { SeparatorComponent } from '../foundation/divider/separator/separator.component';
+import { CardModule } from '../surface/card/card.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { SeparatorComponent } from '../foundation/divider/separator/separator.co
     H2Component,
     SeparatorComponent
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, CardModule],
   exports: [SPAPagesComponent]
 })
 export class SpaPagesModule {}

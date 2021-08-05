@@ -1,1 +1,26 @@
-<p>card works!</p>
+<div class="card" [ngStyle]="{ 'max-width': card.cardProps?.cardMaxWidth }">
+  <div
+    class="card__image"
+    [ngStyle]="{
+      background:
+        'url(http://localhost:4200/assets/images/' +
+        card.imageName +
+        '.png) no-repeat center',
+      'background-size': 'cover',
+      height: card.cardProps?.imageHeight,
+      width: card.cardProps?.imageWidth
+    }"
+  ></div>
+
+  <div
+    class="card__button-content"
+    [ngStyle]="{ display: isButtonVisible && 'flex' }"
+  >
+    <h1>{{ card.title }}</h1>
+    <button type="button">
+      <span class="card__button__arrow-down"></span>
+    </button>
+  </div>
+  <ng-content></ng-content>
+  <app-details></app-details>
+</div>

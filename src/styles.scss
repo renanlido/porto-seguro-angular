@@ -199,6 +199,8 @@ button,
 [type='submit'] {
   -webkit-appearance: button;
   border: none;
+  position: relative;
+  background: none;
 }
 
 /**

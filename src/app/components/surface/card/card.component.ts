@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CardTypeProps } from 'src/_model/CardTypeProps';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
+  @Input() card: CardTypeProps = {
+    id: '',
+    imageName: ''
+  };
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  @Input() isButtonVisible: boolean = false;
 }
