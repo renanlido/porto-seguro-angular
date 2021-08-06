@@ -1,0 +1,85 @@
+<app-default-container id="#wantToSayMore">
+  <app-h1>Quer saber mais?</app-h1>
+
+  <app-separator></app-separator>
+
+  <div class="want-know-more-informations__content">
+    <div class="want-know-more-informations__title">
+      <div>
+        <img
+          src="http://localhost:4200/assets/images/phoneCall.svg"
+          layout="fill"
+        />
+      </div>
+      <p>
+        Ainda sobrou alguma dúvida sobre qual o melhor Plano para sua empresa?
+        Envie seus dados e deixe que a NS Benefícios entrará em contato assim
+        que possível.
+      </p>
+    </div>
+
+    <div class="want-know-more-informations__bottom_content">
+      <form class="want-know-more-informations__form">
+        <div>
+          <label for="name"
+            >Seu nome:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Insira seu nome aqui"
+            />
+          </label>
+
+          <label for="phone"
+            >Seu telefone:
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="(DDD)99999-9999"
+            />
+          </label>
+
+          <label for="email"
+            >Seu email:
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="seuemail@email.com"
+            />
+          </label>
+        </div>
+
+        <div class="want-know-more-informations__form--image">
+          <img
+            src="http://localhost:4200/assets/images/imNotRobot.png"
+            width="340px"
+            height="101px"
+          />
+        </div>
+
+        <button type="submit">ENVIAR CONTATO</button>
+      </form>
+
+      <div class="want-know-more-informations__bottom_separator"></div>
+
+      <div class="want-know-more-informations__contactUs">
+        <h2>FALE CONOSCO AGORA MESMO:</h2>
+        <span>4020-6440</span>
+
+        <button type="button" class="want-know-more-informations__button">
+          <mat-icon>whatsapp</mat-icon>
+          <span>CLIQUE PARA ENVIAR UMA MENSAGEM</span>
+        </button>
+
+        <button type="button" class="want-know-more-informations__button">
+          <mat-icon>phone</mat-icon>
+          <span>CLIQUE PARA LIGAR</span>
+        </button>
+        <p>Horário de Atendimento de 8h às 17h</p>
+      </div>
+    </div>
+  </div>
+</app-default-container>

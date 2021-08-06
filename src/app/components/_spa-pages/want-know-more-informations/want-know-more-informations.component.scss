@@ -1,0 +1,260 @@
+.want-know-more-informations__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.want-know-more-informations__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  margin-bottom: 42px;
+
+  div {
+    position: relative;
+    width: 100%;
+    height: 101px;
+    max-width: 101px;
+  }
+
+  p {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    margin-left: 12px;
+
+    @media (max-width: 440px) {
+      max-width: 223px;
+    }
+  }
+}
+
+.want-know-more-informations__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  gap: 20px;
+
+  div {
+    display: inherit;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 20px;
+
+    label {
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: var(--yellow400);
+      line-height: 1.0625rem;
+      width: 100%;
+    }
+
+    input {
+      padding: 10px;
+      color: var(--gray180);
+      font-size: 0.5625rem;
+      border: 1px solid #9a6d0c;
+      width: 100%;
+    }
+  }
+
+  button {
+    font-size: 0.9375rem;
+    letter-spacing: 0.1875rem;
+    max-width: 289px;
+    color: white;
+
+    padding: 12px 60px;
+
+    border-radius: 25px;
+    background: var(--yellow200);
+
+    transition: background 0.2s;
+
+    &:hover {
+      background: var(--yellow900);
+    }
+  }
+}
+
+.want-know-more-informations__bottom_separator {
+  display: none;
+}
+
+.want-know-more-informations__contactUs {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 6px;
+
+  h2 {
+    font-size: 0.9375rem;
+    font-weight: bold;
+    color: var(--gray200);
+    line-height: 1.25rem;
+  }
+
+  > span {
+    font-size: 1.5625rem;
+    line-height: 2.125rem;
+    font-weight: bold;
+    margin-bottom: 13px;
+    color: var(--yellow400);
+  }
+
+  > p {
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    color: var(--gray160);
+    margin-top: 10px;
+  }
+}
+
+.want-know-more-informations__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  flex: 1;
+  max-width: 340px;
+  width: 100%;
+
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  text-align: left;
+  gap: 12px;
+
+  padding: 12px 45px 12px 58px;
+
+  @media (max-width: 863px) {
+    padding: 12px 45px 12px 45px !important;
+  }
+
+  background: var(--yellow200);
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 12px;
+  color: var(--white100);
+
+  span {
+    width: 100%;
+  }
+
+  & + button {
+    margin-top: 26px;
+  }
+}
+
+// WIDE
+
+@media (min-width: 768px) {
+  .want-know-more-informations__title {
+    margin-top: 60px;
+    margin-bottom: 80px;
+
+    div {
+      height: 138px;
+      max-width: 138px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.6875rem;
+      margin-left: 47px;
+    }
+  }
+
+  .want-know-more-informations__bottom_content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1;
+
+    .want-know-more-informations__form {
+      gap: 0;
+
+      div {
+        label {
+          font-size: 1.125rem;
+          line-height: 1.5rem;
+        }
+
+        input {
+          padding: 19px;
+          font-size: 0.8125rem;
+          border: 1px solid #9a6d0c;
+        }
+      }
+
+      .want-know-more-informations__form--image {
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .want-know-more-informations__bottom_separator {
+      display: block;
+      width: 1px;
+      height: 488px;
+      margin: 0 62px;
+      background: var(--gray190);
+    }
+
+    .want-know-more-informations__contactUs {
+      h2 {
+        font-size: 1.0625rem;
+        line-height: 2.4375rem;
+      }
+
+      > span {
+        font-size: 1.8125rem;
+        line-height: 2.125rem;
+        margin-bottom: 31px;
+      }
+
+      > p {
+        font-size: 0.75rem;
+        line-height: 1.0625rem;
+        color: var(--gray160);
+        margin-top: 10px;
+      }
+
+      .want-know-more-informations__button {
+        height: 90px;
+        max-width: 407px;
+        flex: 0;
+
+        font-size: 1rem;
+        line-height: 1.375rem;
+        text-align: left;
+        gap: 17px;
+
+        padding: 22px 77px 22px 54px;
+
+        mat-icon {
+          font-size: 40px;
+          width: 40px;
+          height: 40px;
+        }
+
+        & + button {
+          margin-top: 31px;
+        }
+      }
+    }
+  }
+}
