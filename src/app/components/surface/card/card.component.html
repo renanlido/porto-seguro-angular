@@ -8,10 +8,7 @@
   <div
     class="card__image"
     [ngStyle]="{
-      background:
-        'url(http://localhost:4200/assets/images/' +
-        card.imageName +
-        '.png) no-repeat center',
+      background: 'url(' + card.imageSrc + ') no-repeat center',
       'background-size': 'cover',
       height: card.cardProps?.imageHeight,
       width: card.cardProps?.imageWidth

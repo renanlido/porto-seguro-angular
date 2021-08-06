@@ -1,9 +1,9 @@
 import { CardDetailsProps } from './CardDetailsProps';
 
 export type CardTypeProps = {
-  id: string;
+  id: string | number;
   title?: string;
-  imageName: string;
+  imageSrc: string;
   details?: CardDetailsProps;
   cardProps?: {
     imageHeight?: string;

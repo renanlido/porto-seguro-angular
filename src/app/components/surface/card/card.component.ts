@@ -17,7 +17,7 @@ export class CardComponent {
 
   @Input() card: CardTypeProps = {
     id: '',
-    imageName: ''
+    imageSrc: ''
   };
 
   @Input() isButtonVisible: boolean = false;

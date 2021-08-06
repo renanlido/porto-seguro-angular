@@ -16,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { WantKnowMoreInformationsComponent } from './want-know-more-informations/want-know-more-informations.component';
 import { FooterComponent } from './footer/footer.component';
 import { WideComponent } from '../surface/card/details/wide/wide.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { WideComponent } from '../surface/card/details/wide/wide.component';
     FooterComponent,
     WideComponent
   ],
-  imports: [CommonModule, CardModule, MatIconModule],
+  imports: [CommonModule, CardModule, MatIconModule, HttpClientModule],
   exports: [SPAPagesComponent]
 })
 export class SpaPagesModule {}

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class PlanBenefitsComponent {
   public firstCard = {
     id: '1',
-    imageName: 'recepcao',
+    imageSrc: 'http://localhost:4200/assets/images/recepcao.png',
     cardProps: {
       imageHeight: '266px',
       imageWidth: '504px',
@@ -18,7 +18,7 @@ export class PlanBenefitsComponent {
 
   public secondCard = {
     id: '2',
-    imageName: 'humanHandInsertCoinPig',
+    imageSrc: 'http://localhost:4200/assets/images/humanHandInsertCoinPig.png',
     cardProps: {
       imageHeight: '266px',
       imageWidth: '504px',
