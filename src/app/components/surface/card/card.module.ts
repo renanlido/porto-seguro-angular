@@ -4,6 +4,7 @@ import { CardComponent } from './card.component';
 import { DetailsComponent } from './details/details.component';
 import { MobileComponent } from './details/mobile/mobile.component';
 import { WideComponent } from './details/wide/wide.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { WideComponent } from './details/wide/wide.component';
     MobileComponent,
     WideComponent
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, MatIconModule],
   exports: [CardComponent]
 })
 export class CardModule {}

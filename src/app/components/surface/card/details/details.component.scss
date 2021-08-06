@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+  .details_mobile-visibility {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .details_wide_visibility {
+    display: none;
+  }
+}

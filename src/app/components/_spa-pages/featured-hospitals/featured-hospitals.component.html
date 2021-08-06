@@ -12,7 +12,8 @@
       *ngFor="let card of cardData"
       [card]="card"
       [isButtonVisible]="isButtonVisible"
+      (OpenCardStatusEmitter)="handleCardDetailsOpen($event)"
     ></app-card>
   </div>
-  <div class="card--isActive"></div>
+  <div *ngIf="isCardDetailsOpen" class="card__details--isVisible"></div>
 </app-default-container>

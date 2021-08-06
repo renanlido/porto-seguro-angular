@@ -1,1 +1,28 @@
-<p>wide works!</p>
+<div class="card-details-wide">
+  <p [innerHTML]="details?.text"></p>
+  <hr />
+  <div class="card-details-wide__container-adress material-icons-outlined">
+    <div class="card-details-wide__adress">
+      <!-- <FiMapPin /> -->
+      <mat-icon aria-label="Place Icon" class="card-details-wide__icon"
+        >place</mat-icon
+      >
+      <b>Endereço:</b>
+      <span class="card-details-wide__detailed_adress">
+        {{ details?.adress?.street }} <br />
+        {{ details?.adress?.neighborhood }}, {{ details?.adress?.state }} -
+        {{ details?.adress?.uf }}
+        <br />
+        {{ details?.adress?.cep }}
+      </span>
+    </div>
+
+    <div class="card-details-wide__phone">
+      <mat-icon aria-label="Phone Icon" class="card-details-wide__icon"
+        >local_phone</mat-icon
+      >
+      <b>Telefone:</b
+      ><span>({{ details?.phone?.ddd }}) {{ details?.phone?.number }}</span>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,26 @@
-<p>mobile works!</p>
+<div class="card-details-mobile">
+  <p [innerHTML]="details?.text"></p>
+  <hr />
+  <div class="card-details-mobile__container-adress">
+    <div class="card-details-mobile__adress">
+      <mat-icon aria-label="Place Icon" class="card-details-mobile__icon"
+        >place</mat-icon
+      >
+      <b>Endereço:</b>
+      <span>
+        {{ details?.adress?.street }} <br />
+        {{ details?.adress?.neighborhood }}, {{ details?.adress?.state }} -
+        {{ details?.adress?.uf }}
+        <br />
+        {{ details?.adress?.cep }}
+      </span>
+    </div>
+
+    <div class="card-details-mobile__phone">
+      <mat-icon aria-label="Phone Icon" class="card-details-mobile__phone-icon"
+        >local_phone</mat-icon
+      >
+      <b>Telefone:</b>({{ details?.phone?.ddd }}) {{ details?.phone?.number }}
+    </div>
+  </div>
+</div>

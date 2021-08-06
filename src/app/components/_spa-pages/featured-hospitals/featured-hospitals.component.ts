@@ -11,6 +11,12 @@ export class FeaturedHospitalsComponent implements OnInit {
   public cardData: CardTypeProps[] = [];
   public isButtonVisible = true;
 
+  public isCardDetailsOpen = false;
+
+  handleCardDetailsOpen(event: boolean) {
+    this.isCardDetailsOpen = event;
+  }
+
   ngOnInit(): void {
     this.cardData = [
       {

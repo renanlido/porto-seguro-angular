@@ -1,0 +1,71 @@
+.card-details-mobile {
+  flex-direction: column;
+
+  padding: 0 24px 36px 24px;
+
+  p {
+    font-size: 0.75rem;
+    line-height: 1.0625rem;
+    color: var(--gray200);
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #c5ccd9;
+    padding: 0;
+  }
+}
+
+.card-details-mobile__container-adress {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.card-details-mobile__adress {
+  display: flex;
+  font-weight: bold;
+  font-size: 0.75rem;
+  gap: 5px;
+
+  > span {
+    font-weight: normal;
+  }
+}
+
+.card-details-mobile__icon {
+  font-size: 16px;
+  color: var(--yellow200);
+  width: 16px;
+  height: 16px;
+}
+
+.card-details-mobile__phone {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  font-size: 0.75rem;
+  gap: 5px;
+
+  span {
+    margin-left: 8px;
+    margin-right: 3px;
+  }
+}
+
+.card-details-mobile__phone-icon {
+  margin-top: 3px;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  color: var(--yellow200);
+}
+
+@media (max-width: 768px) {
+  .card-details-mobile__card-details {
+    display: none;
+  }
+}

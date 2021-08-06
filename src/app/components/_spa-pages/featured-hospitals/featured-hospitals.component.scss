@@ -6,12 +6,8 @@
   width: 100%;
 }
 
-.card--isActive {
-  height: 339px;
-
-  @media (max-width: 1045px) {
-    height: 477px;
-  }
+.card__details--isVisible {
+  display: none;
 }
 
 @media (min-width: 780px) {
@@ -22,5 +18,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+  }
+
+  .card__details--isVisible {
+    height: 339px;
+
+    @media (max-width: 1045px) {
+      height: 477px;
+    }
   }
 }
