@@ -7,17 +7,21 @@ import { SpaPagesModule } from './components/_spa-pages/spa-pages.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { CreateNewHospitalPageComponent } from './components/_create-new-hospital-page/create-new-hospital-page.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CreateNewHospitalPageComponent],
   imports: [
     BrowserModule,
     MenuModule,
     SpaPagesModule,
     BrowserAnimationsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })

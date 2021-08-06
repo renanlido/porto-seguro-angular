@@ -35,6 +35,11 @@ import { HttpClientModule } from '@angular/common/http';
     WideComponent
   ],
   imports: [CommonModule, CardModule, MatIconModule, HttpClientModule],
-  exports: [SPAPagesComponent]
+  exports: [
+    SPAPagesComponent,
+    DefaultContainerComponent,
+    H1Component,
+    SeparatorComponent
+  ]
 })
 export class SpaPagesModule {}

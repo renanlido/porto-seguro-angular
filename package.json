@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "component": "ng g c",
     "module": "ng g m",
-    "service": "ng g s"
+    "service": "ng g s",
+    "routes": "ng generate module app-routing --flat --module=app"
   },
   "private": true,
   "dependencies": {

@@ -1,0 +1,66 @@
+<div class="create-new__container">
+  <div class="create-new__content">
+    <app-h1>Novo cadastro de Hospital</app-h1>
+    <app-separator></app-separator>
+
+    <form>
+      <form class="want-know-more-informations__form">
+        <div>
+          <label for="name"
+            >Nome do hospital:
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Insira o nome aqui"
+            />
+          </label>
+
+          <label for="image"
+            >URL da imagem:
+            <input
+              type="text"
+              name="image"
+              id="image"
+              placeholder="https://minhaimagem.com/imagem.png"
+              defaultValue="http://placeimg.com/640/480"
+            />
+          </label>
+
+          <label for="address"
+            >Enredeço do hospital:
+            <input
+              type="address"
+              name="address"
+              id="address"
+              placeholder="Digite o endereço aqui"
+            />
+          </label>
+
+          <label for="phone"
+            >Telefone do hospital:
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="(21)9999-9999"
+            />
+          </label>
+
+          <label for="details"
+            >Mais informações:
+            <input
+              type="details"
+              name="details"
+              id="details"
+              placeholder="Digite algo sobre o hospital
+            "
+            />
+          </label>
+        </div>
+
+        <button type="submit">SALVAR</button>
+      </form>
+    </form>
+  </div>
+</div>
