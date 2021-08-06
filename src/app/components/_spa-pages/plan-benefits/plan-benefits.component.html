@@ -1,0 +1,35 @@
+<app-default-container id="#plan-benefits">
+  <app-h1>Benefícios do plano</app-h1>
+  <app-separator></app-separator>
+
+  <div class="plan-benefits__container-cards">
+    <app-card [card]="firstCard">
+      <div class="plan-benefits__content-cards">
+        <h1 class="plan-benefits__card-title">Rede referenciada</h1>
+        <p class="plan-benefits__card-text">
+          Com o plano Ouro da Porto Seguro Saúde, você conta com uma rede
+          <b>referenciada de hospitais</b> com toda a comodidade que você e seus
+          funcionários precisam.
+        </p>
+
+        <Button> VEJA A LISTA COMPLETA DE HOSPITAIS </Button>
+      </div>
+    </app-card>
+
+    <app-card [card]="secondCard">
+      <div class="plan-benefits__content-cards">
+        <h1 class="plan-benefits__card-title">
+          Reembolso de consultas e exames simples
+        </h1>
+        <p class="plan-benefits__card-text">
+          Com o plano Ouro, receba o
+          <b>reembolso de seus exames e consultas</b> em até
+          <b>48 horas</b> úteis, a partir da data de entrega de todos os
+          documentos necessários. <br />
+          <br />
+          Plano Ouro Max: <b>R$280,00</b>
+        </p>
+      </div>
+    </app-card>
+  </div>
+</app-default-container>

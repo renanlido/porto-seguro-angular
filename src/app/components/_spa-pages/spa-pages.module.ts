@@ -9,6 +9,7 @@ import { DefaultContainerComponent } from '../foundation/layout/default-containe
 import { H2Component } from '../foundation/typography/h2/h2.component';
 import { SeparatorComponent } from '../foundation/divider/separator/separator.component';
 import { CardModule } from '../surface/card/card.module';
+import { PlanBenefitsComponent } from './plan-benefits/plan-benefits.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CardModule } from '../surface/card/card.module';
     H1Component,
     DefaultContainerComponent,
     H2Component,
-    SeparatorComponent
+    SeparatorComponent,
+    PlanBenefitsComponent
   ],
   imports: [CommonModule, CardModule],
   exports: [SPAPagesComponent]
