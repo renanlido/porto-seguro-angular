@@ -23,7 +23,7 @@
     [ngStyle]="{ display: isButtonVisible && 'flex' }"
   >
     <h1>{{ card.title }}</h1>
-    <button type="button" (click)="handleOpen()">
+    <button type="button" (click)="handleOpen(card.details)">
       <span class="card__button__arrow-down"></span>
     </button>
   </div>

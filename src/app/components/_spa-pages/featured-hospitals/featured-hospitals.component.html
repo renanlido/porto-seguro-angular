@@ -17,3 +17,7 @@
   </div>
   <div *ngIf="isCardDetailsOpen" class="card__details--isVisible"></div>
 </app-default-container>
+<app-card-details-wide
+  [details]="cardDetails"
+  *ngIf="isCardDetailsOpen"
+></app-card-details-wide>

@@ -15,6 +15,7 @@ import { FullListHospitalsComponent } from './full-list-hospitals/full-list-hosp
 import { MatIconModule } from '@angular/material/icon';
 import { WantKnowMoreInformationsComponent } from './want-know-more-informations/want-know-more-informations.component';
 import { FooterComponent } from './footer/footer.component';
+import { WideComponent } from '../surface/card/details/wide/wide.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     ButtonComponent,
     FullListHospitalsComponent,
     WantKnowMoreInformationsComponent,
-    FooterComponent
+    FooterComponent,
+    WideComponent
   ],
   imports: [CommonModule, CardModule, MatIconModule],
   exports: [SPAPagesComponent]

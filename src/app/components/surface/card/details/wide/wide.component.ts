@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { CardDetailsProps } from 'src/_model/CardDetailsProps';
 
 @Component({
-  selector: 'app-wide',
+  selector: 'app-card-details-wide',
   templateUrl: './wide.component.html',
   styleUrls: ['./wide.component.scss']
 })
