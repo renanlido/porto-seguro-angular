@@ -1,3 +1,9 @@
-<h1 class="heading1">
+<h1
+  class="heading1"
+  [ngStyle]="{
+    color: headingProps.color && 'var(--' + headingProps.color + ')',
+    'font-size': headingProps.fontSize && headingProps.fontSize
+  }"
+>
   <ng-content></ng-content>
 </h1>

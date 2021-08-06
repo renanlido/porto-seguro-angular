@@ -1,0 +1,39 @@
+<div class="full-list-hospitals__container" *ngIf="isOpen">
+  <!-- style={{ visibility: isCompleteListActive ? 'visible' : 'hidden' }} -->
+  <div class="full-list-hospitals__content">
+    <button
+      type="button"
+      class="full-list-hospitals__cross"
+      (click)="handleClose()"
+    >
+      <span style="font-size: 26px">&times;</span>
+    </button>
+    <div class="full-list-hospitals__text">
+      <app-h1
+        [headingProps]="headingProps"
+        style="@media (max-width: 768px) {font-size: 1.1rem !important}"
+        >Hospitais de referência</app-h1
+      >
+      <p>
+        <b>Rio de Janeiro:</b>
+        <br />- Copa D’or <br />- Quinta D’or <br />- Barra D’or <br />- Casa de
+        Saúde São Jose (Humaitá) <br />- Clínica São Vicente da Gávea <br />-
+        Hospital Vitória (Barra) <br />- Perinatal Laranjeiras <br />- Perinatal
+        Barra
+      </p>
+
+      <p>
+        <b>São Paulo:</b>
+        <br />- Hospital Alemão Oswaldo Cruz <br />- Hospital 9 de Julho <br />-
+        Hospital São Luiz – Anália Franco / Itaim /Morumbi / S.C. Sul
+      </p>
+
+      <button>
+        <mat-icon class="full-list-hospitals__button-icon"
+          >arrow_downward</mat-icon
+        >
+        BAIXE A LISTA COMPLETA DE HOSPITAIS
+      </button>
+    </div>
+  </div>
+</div>

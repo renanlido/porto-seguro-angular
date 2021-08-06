@@ -11,6 +11,8 @@ import { SeparatorComponent } from '../foundation/divider/separator/separator.co
 import { CardModule } from '../surface/card/card.module';
 import { PlanBenefitsComponent } from './plan-benefits/plan-benefits.component';
 import { ButtonComponent } from '../foundation/action/button/button.component';
+import { FullListHospitalsComponent } from './full-list-hospitals/full-list-hospitals.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { ButtonComponent } from '../foundation/action/button/button.component';
     H2Component,
     SeparatorComponent,
     PlanBenefitsComponent,
-    ButtonComponent
+    ButtonComponent,
+    FullListHospitalsComponent
   ],
-  imports: [CommonModule, CardModule],
+  imports: [CommonModule, CardModule, MatIconModule],
   exports: [SPAPagesComponent]
 })
 export class SpaPagesModule {}

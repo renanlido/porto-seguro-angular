@@ -1,0 +1,144 @@
+.full-list-hospitals__container {
+  visibility: visible;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 62px;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.full-list-hospitals__content {
+  display: flex;
+  position: relative;
+
+  .full-list-hospitals__cross {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+
+    color: #c9c9c9;
+
+    background: transparent;
+  }
+
+  justify-content: center;
+  max-width: 309px;
+  max-height: 464px;
+
+  background-color: var(--white100);
+
+  border-radius: 12px;
+
+  margin-top: 139px;
+}
+
+.full-list-hospitals__text {
+  padding: 32px 40px;
+  color: var(--gray900);
+
+  h1 {
+    font-size: 1.1875rem;
+    color: var(--yellow400);
+  }
+
+  p {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+
+    & + p {
+      margin-top: 30px;
+    }
+  }
+
+  > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 14px;
+    font-size: 0.65rem;
+    padding: 9px 0px;
+    width: 100%;
+    max-width: 289px;
+
+    letter-spacing: 0.9px;
+    font-weight: bold;
+    margin-top: 18px;
+
+    color: var(--white100);
+    background: var(--yellow900);
+
+    transition: background 0.2s;
+
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 16px;
+
+    &:hover {
+      background: var(--yellow950);
+    }
+  }
+
+  .full-list-hospitals__button-icon {
+    width: 13px;
+    height: 13px;
+    font-size: 13px;
+    margin-right: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .full-list-hospitals__container {
+    top: 94px;
+  }
+
+  .full-list-hospitals__content {
+    justify-content: flex-start;
+    max-width: 686px;
+    max-height: 623px;
+    width: 100%;
+    margin-top: 30px;
+
+    .full-list-hospitals__cross {
+      top: 28px;
+      right: 43px;
+    }
+  }
+
+  .full-list-hospitals__text {
+    width: 100%;
+    padding: 35px 42px;
+
+    h1 {
+      font-size: 1.875rem;
+      line-height: 2.5625rem;
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 1.25rem;
+      line-height: 1.6875rem;
+    }
+
+    > button {
+      bottom: 49px;
+      font-size: 1.0625rem;
+      padding: 9px 0px;
+      max-width: 481px;
+
+      .full-list-hospitals__button-icon {
+        width: 23px;
+        height: 23px;
+        margin-right: 10px;
+        font-size: 23px !important;
+      }
+    }
+  }
+}

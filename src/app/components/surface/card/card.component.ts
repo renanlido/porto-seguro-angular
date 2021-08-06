@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CardTypeProps } from 'src/_model/CardTypeProps';
 
 @Component({
@@ -6,11 +6,7 @@ import { CardTypeProps } from 'src/_model/CardTypeProps';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent implements OnInit {
-  ngOnInit(): void {
-    console.log(this.card);
-  }
-
+export class CardComponent {
   public isOpen = false;
 
   @Input() card: CardTypeProps = {

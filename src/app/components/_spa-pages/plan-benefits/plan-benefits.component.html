@@ -12,7 +12,7 @@
           funcionários precisam.
         </p>
 
-        <button class="plan-benefits__button">
+        <button class="plan-benefits__button" (click)="handleOpen()">
           VEJA A LISTA COMPLETA DE HOSPITAIS
         </button>
       </div>
@@ -34,4 +34,8 @@
       </div>
     </app-card>
   </div>
+  <app-full-list-hospitals
+    (OpenCardStatusEmitter)="handleEventOpen($event)"
+    [isOpen]="isOpen"
+  ></app-full-list-hospitals>
 </app-default-container>

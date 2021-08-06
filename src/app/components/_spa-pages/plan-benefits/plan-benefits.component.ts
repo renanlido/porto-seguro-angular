@@ -25,4 +25,14 @@ export class PlanBenefitsComponent {
       cardMaxWidth: '504px'
     }
   };
+
+  public isOpen = false;
+
+  handleEventOpen(event: boolean) {
+    this.isOpen = event;
+  }
+
+  handleOpen() {
+    this.isOpen = !this.isOpen;
+  }
 }
