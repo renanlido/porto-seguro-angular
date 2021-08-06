@@ -1,4 +1,10 @@
-<div class="card" [ngStyle]="{ 'max-width': card.cardProps?.cardMaxWidth }">
+<div
+  class="card"
+  [ngStyle]="{
+    'max-width': card.cardProps?.cardMaxWidth,
+    width: card.cardProps && '100%'
+  }"
+>
   <div
     class="card__image"
     [ngStyle]="{

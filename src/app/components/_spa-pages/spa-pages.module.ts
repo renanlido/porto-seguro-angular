@@ -10,6 +10,7 @@ import { H2Component } from '../foundation/typography/h2/h2.component';
 import { SeparatorComponent } from '../foundation/divider/separator/separator.component';
 import { CardModule } from '../surface/card/card.module';
 import { PlanBenefitsComponent } from './plan-benefits/plan-benefits.component';
+import { ButtonComponent } from '../foundation/action/button/button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PlanBenefitsComponent } from './plan-benefits/plan-benefits.component';
     DefaultContainerComponent,
     H2Component,
     SeparatorComponent,
-    PlanBenefitsComponent
+    PlanBenefitsComponent,
+    ButtonComponent
   ],
   imports: [CommonModule, CardModule],
   exports: [SPAPagesComponent]
