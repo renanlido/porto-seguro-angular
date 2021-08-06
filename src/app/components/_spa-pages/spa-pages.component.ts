@@ -1,9 +1,9 @@
 /* eslint-disable no-useless-constructor */
 import { Component } from '@angular/core';
-import { CardTypeProps } from 'src/_model/CardTypeProps';
-import { responseData } from 'src/_model/responseData';
+import { CardTypeProps } from 'src/app/_model/CardTypeProps';
+import { responseData } from 'src/app/_model/responseData';
 // import { v4 as uuid } from 'uuid';
-import { ApiService } from '../services/api/api.service';
+import { ApiService } from '../../services/api/api.service';
 
 @Component({
   selector: 'app-spa-pages',

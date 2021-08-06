@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CardDetailsProps } from 'src/_model/CardDetailsProps';
+import { CardDetailsProps } from 'src/app/_model/CardDetailsProps';
 
 @Component({
   selector: 'app-details',

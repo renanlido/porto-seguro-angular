@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { CardDetailsProps } from 'src/_model/CardDetailsProps';
-import { CardTypeProps } from 'src/_model/CardTypeProps';
+import { CardDetailsProps } from 'src/app/_model/CardDetailsProps';
+import { CardTypeProps } from 'src/app/_model/CardTypeProps';
 
 type OpenCardEventEmitter = {
   isOpen: boolean;
