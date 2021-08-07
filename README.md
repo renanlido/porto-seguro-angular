@@ -1,27 +1,52 @@
-# PortoSeguroAngular
+# Site Porto Seguro - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
+Teste de desenvolvimento de site em Angular v12 com integração a web api.
 
-## Development server
+## 🚀 Começando
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### 🔧 Instalação
 
-## Code scaffolding
+Clone o projeto em sua máquina local e execute
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+yarn ou npm install
+```
 
-## Build
+para instalar as dependencias do projeto.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Execute
 
-## Running unit tests
+```
+yarn star ou npm start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+para rodar o projeto.
 
-## Running end-to-end tests
+O projeto estará disponível em
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+http://localhost:4200
+```
 
-## Further help
+#### 📦 Desenvolvimento
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Projeto desenvolvido com Angular versão 12, HTML e SCSS.
+
+#### 🛠️ Construído com
+
+- [Angular v12](https://angular.io/docs) - Framework utilizado
+- [Yarn](https://yarnpkg.com) - Gerenciador de dependencias
+
+#### ✒️ Autor
+
+- **Renan Oliveira** - _Dev Frontend_ - [renanlido](https://github.com/renanlido)
+
+<!-- #### 📄 Licença
+
+Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes. -->
+
+#### 🎁 Expressões de gratidão
+
+- Agradeço à Perla Lima e a Alexandre Rocha pela confiaça e pela oportunidade 💓
+- Meus sinceros agradecimento à [Marlin](https://www.marlin.com.br) e equipe! 🍺
+- Agradeço a Deus e a minha esposa, sem eles eu não conseguiria 🤓.
