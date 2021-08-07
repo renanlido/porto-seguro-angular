@@ -8,10 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { CreateNewHospitalPageComponent } from './components/_create-new-hospital-page/create-new-hospital-page.component';
+import { CreateNewHospitalModule } from './components/_create-new-hospital-page/create-new-hospital.module';
 
 @NgModule({
-  declarations: [AppComponent, CreateNewHospitalPageComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     MenuModule,
@@ -19,7 +19,8 @@ import { CreateNewHospitalPageComponent } from './components/_create-new-hospita
     BrowserAnimationsModule,
     MatIconModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CreateNewHospitalModule
   ],
   exports: [],
   providers: [],

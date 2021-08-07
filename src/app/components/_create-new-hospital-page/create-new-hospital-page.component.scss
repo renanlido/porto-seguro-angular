@@ -42,10 +42,16 @@
 
       input {
         padding: 10px;
-        color: var(--gray180);
+        color: var(--gray900);
+        font-weight: bold;
         font-size: 0.5625rem;
         border: 1px solid #9a6d0c;
         width: 100%;
+
+        &::placeholder {
+          font-weight: normal;
+          color: var(--gray110);
+        }
       }
     }
 
@@ -64,6 +70,10 @@
 
       &:hover {
         background: var(--yellow900);
+      }
+
+      &:disabled {
+        background-color: var(--gray160);
       }
     }
   }
