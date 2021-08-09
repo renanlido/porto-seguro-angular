@@ -1,4 +1,11 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+  OnInit,
+  HostListener
+} from '@angular/core';
 import { CardDetailsProps } from 'src/app/_model/CardDetailsProps';
 import { CardTypeProps } from 'src/app/_model/CardTypeProps';
 
@@ -12,7 +19,18 @@ type OpenCardEventEmitter = {
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
+  public innerWidth: any = window.innerWidth;
+
+  ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.innerWidth = window.innerWidth;
+  }
+
   public isOpen = false;
 
   @Input() card: CardTypeProps = {

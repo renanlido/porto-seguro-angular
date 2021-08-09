@@ -23,6 +23,11 @@
     <app-wide-nav></app-wide-nav>
 
     <!-- COMPONENT MOBILE NAV -->
-    <app-mobile-nav class="nav_mobile"></app-mobile-nav>
+    <app-mobile-nav
+      class="nav_mobile"
+      (OpenMenuEventEmitter)="handleOpen($event)"
+    ></app-mobile-nav>
   </div>
 </nav>
+
+<app-drop-menu [statusDropMenu]="isOpen"></app-drop-menu>

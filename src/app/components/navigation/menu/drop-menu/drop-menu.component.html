@@ -1,0 +1,48 @@
+<nav class="drop-menu__container" *ngIf="statusDropMenu">
+  <ul>
+    <li>
+      <a href="/"> HOME </a>
+    </li>
+    <li>
+      <a href="#featuredHospitals"> HOSPITAIS </a>
+    </li>
+    <li>
+      <a href="#plan-benefits"> BENEFÍCIOS </a>
+    </li>
+    <li>
+      <a href="#servicos"> SERVIÇOS ESPECIAIS </a>
+    </li>
+    <li>
+      <a href="#wantToSayMore"> CONTATO </a>
+    </li>
+  </ul>
+
+  <div>
+    <div class="drop-menu__contactUsNow">
+      <a
+        href="/create"
+        class="drop-menu__contactUs__button drop-menu__contactUs__link"
+      >
+        <mat-icon>add_circle_outline</mat-icon>
+        ADICIONAR NOVO HOSPITAL
+      </a>
+
+      <h2>FALE CONOSCO AGORA MESMO:</h2>
+      <span>4020-6440</span>
+
+      <button type="button" class="drop-menu__contactUs__button">
+        <mat-icon>whatsapp</mat-icon>
+        <!-- <FaWhatsapp fontSize="50px" /> -->
+        <span>CLIQUE PARA ENVIAR UMA MENSAGEM</span>
+      </button>
+
+      <button type="button" class="drop-menu__contactUs__button">
+        <mat-icon>phone</mat-icon>
+        <!-- <MdLocalPhone fontSize="50px" /> -->
+        <span>CLIQUE PARA LIGAR</span>
+      </button>
+
+      <p>Horário de Atendimento de 8h às 17h</p>
+    </div>
+  </div>
+</nav>

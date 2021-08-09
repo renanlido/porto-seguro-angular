@@ -53,15 +53,6 @@
   }
 }
 
-// .card_bottom {
-//   display: flex;
-//   flex-direction: column;
-//   // padding: 7.5px 27px 20px;
-//   // height: 60px;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 @media (min-width: 768px) {
   .card {
     max-width: 376px;
@@ -70,8 +61,4 @@
   .card__image {
     height: 230px;
   }
-
-  // .card_bottom {
-  //   padding: 12px 27px;
-  // }
 }

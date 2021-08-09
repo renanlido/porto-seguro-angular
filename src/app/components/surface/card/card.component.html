@@ -10,8 +10,8 @@
     [ngStyle]="{
       background: 'url(' + card.imageSrc + ') no-repeat center',
       'background-size': 'cover',
-      height: card.cardProps?.imageHeight,
-      width: card.cardProps?.imageWidth
+      height: innerWidth >= 768 && card.cardProps?.imageHeight,
+      width: innerWidth >= 768 && card.cardProps?.imageWidth
     }"
   ></div>
 
