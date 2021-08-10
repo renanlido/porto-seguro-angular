@@ -53,16 +53,16 @@ export class CreateNewHospitalPageComponent implements OnInit {
   }
 
   handleSubmit() {
-    console.log(this.form.value);
+    //console.log(this.form.value);
 
-    // const response = this.api.post(this.form.value);
+    const response = this.api.post(this.form.value);
 
-    // if (response) {
-    //   this.form.reset();
+     if (response) {
+       this.form.reset();
 
-    //   alert('Hospital salvo com sucesso');
-    // } else {
-    //   alert('Ocorreu um erro');
-    // }
+       alert('Hospital salvo com sucesso');
+     } else {
+       alert('Ocorreu um erro');
+     }
   }
 }
